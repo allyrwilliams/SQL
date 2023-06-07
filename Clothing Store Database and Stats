@@ -1,0 +1,23 @@
+CREATE TABLE Store (ID INTEGER PRIMARY KEY, Item TEXT, Price INTEGER, Quantity INTEGER, Color text);  
+
+INSERT into store VALUES (1, "Shirt", 24.99, 1, "Pink");
+INSERT into store VALUES (2, "Sweatshirt", 35.99, 10, "Yellow");
+INSERT into store VALUES (3, "Socks", 15.99, 20, "Grey");
+INSERT into store VALUES (4, "Rings", 18.99, 50, "Red");
+INSERT into store VALUES (6, "Sweatpants", 16.99, 6, "White");
+INSERT into store VALUES (7, "Jackets", 18.99, 16,"Green");
+INSERT into store VALUES (8, "Hats", 19.99, 5, "Black");
+INSERT into store VALUES (9, "Tanktops", 18.99, 2, "Purple");
+INSERT into store VALUES (10, "Shoes", 50.99, 17, "Black and White");
+INSERT into store VALUES (11, "Shorts", 40.99, 20, "Light Blue");
+INSERT into store VALUES (12, "Leggings", 20.99, 25, "Black");
+INSERT into store VALUES (13, "Dresses", 15.99, 60, "Rainbow");
+INSERT into store VALUES (14, "Coats", 60.99, 38, "Black"); 
+INSERT into store VALUES (15,"Blouses", 40.99, 24, "White");
+SELECT * FROM Store;
+
+--display the database ordered by price. 
+SELECT * FROM store ORDER BY price desc;
+
+--what items have the most quantity?
+SELECT * FROM store ORDER by quantity desc;
